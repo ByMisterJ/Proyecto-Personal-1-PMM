@@ -16,5 +16,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+    <!-- Lista de jugadores -->
+    <EditText
+        android:id="@+id/playerInput"
+        android:hint="Introduce nombre del jugador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/addPlayerButton"
+        android:text="Añadir jugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
 
 </LinearLayout>
