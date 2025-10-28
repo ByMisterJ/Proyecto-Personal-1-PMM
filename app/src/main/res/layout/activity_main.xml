@@ -40,4 +40,29 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp" />
 
+    <!-- Ruleta de extremidades -->
+    <TextView
+        android:id="@+id/extremidadText"
+        android:text="Extremidad: -"
+        android:textSize="20sp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Ruleta de colores -->
+    <TextView
+        android:id="@+id/colorText"
+        android:text="Color: -"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Botón para girar ruletas -->
+    <Button
+        android:id="@+id/spinButton"
+        android:text="Girar ruletas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>
