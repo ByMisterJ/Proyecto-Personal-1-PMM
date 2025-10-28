@@ -1,20 +1,23 @@
 package com.example.proyectopersonal1pmm
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
-    }
+
+    private val jugadores = mutableListOf<String>()
+    private lateinit var playerInput: EditText
+    private lateinit var playerList: TextView
+    private lateinit var extremidadText: TextView
+    private lateinit var colorText: TextView
+    private lateinit var spinButton: Button
+    private lateinit var addPlayerButton: Button
+
+    private val extremidades = listOf("Mano izquierda", "Mano derecha", "Pie izquierdo", "Pie derecho")
+    private val colores = listOf("Rojo", "Azul", "Verde", "Amarillo")
 }
