@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
             val nombre = playerInput.text.toString().trim()
             if (nombre.isNotEmpty() && jugadores.size < 4) {
                 jugadores.add(nombre)
+                actualizarListaJugadores()
                 playerInput.text.clear()
             } else if (jugadores.size >= 4) {
                 Toast.makeText(this, "Máximo 4 jugadores", Toast.LENGTH_SHORT).show()
@@ -61,6 +62,11 @@ class MainActivity : AppCompatActivity() {
 
             Toast.makeText(this, "$jugador → $extremidad en $color", Toast.LENGTH_LONG).show()
         }
+    }
+
+    private fun actualizarListaJugadores() {
+        val texto = "Jugadores:\n" + jugadores.joinToString("\n")
+        playerList.text = texto
     }
 
 }
